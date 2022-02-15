@@ -20,6 +20,15 @@ if [ 0$? -ne 0 ]; then
     mv $execfile $execfile-proper
     cp $top/python3 .env/bin
     chmod +x $execfile
+
+    echo "Replacing pip3 command..."
+    pips=$(cd .env/bin; ls -1 pip*)
+    mkdir .env/bin/proper
+    mv .env/bin/pip* .env/bin/proper
+    for p in $pips; do
+        cp $top/pip3 .env/bin/$p
+    done
+    chmod +x .env/bin/pip*
 else
     echo "Already set up it."
 fi
