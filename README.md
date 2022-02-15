@@ -1,5 +1,8 @@
-SageMath environment for venv (and VSCode)
+SageMath environment for VSCode
 ====
+# Caution
+- Operations with `pip` in this environment modify python packages bundled with Sage and cannot be undone!
+
 # Prerequisites
 - Sage is installed and executable `sage` is on execution PATH.
     - See https://doc.sagemath.org/html/en/installation/binary.html
