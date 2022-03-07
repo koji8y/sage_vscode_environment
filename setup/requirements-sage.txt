@@ -1,0 +1,10 @@
+wheel
+cysignals
+gmpy2
+cypari2
+psutil
+pexpect
+memory_allocator
+#
+ipython
+sympy

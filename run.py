@@ -7,5 +7,12 @@ x, y = var('x,y')
 expr1 = 2 * x + 3 * y - 30 > 0
 expr2 = 3 * x + 4 * y - 48 < 0 
 # %%
-solve_ineq([expr1, expr2])
+try: 
+  display()
+except NameError:
+  def display(*args, **kwargs):
+    print(*args, **kwargs)
+# %%
+solution = solve_ineq([expr1, expr2])
+display(solution)
 # %%

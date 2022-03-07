@@ -1,15 +1,13 @@
 SageMath environment for VSCode
 ====
-# Caution
-- Operations with `pip` in this environment modify python packages bundled with Sage and cannot be undone!
-
 # Prerequisites
 - Sage is installed and executable `sage` is on execution PATH.
     - See https://doc.sagemath.org/html/en/installation/binary.html
+- You have to install the same version of python as bundled with Sage.
 - No directory named `.env` exists here.
 
 # Preparation
-- Run `bin-template-for-sage/setup`
+- Run `setup/setup.sh`
     - Confirmed environment(s):
         - Ubuntu 20.04 with SageMath version 9.4, Release Date: 2021-08-22 (used tar ball `sage-9.4-Ubuntu_20.04-x86_64.tar.gz`.)
         - macos 12.2.1 with SageMath version 9.5, Release Date: 2022-01-30 (installed with `brew install sage`.)
